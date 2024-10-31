@@ -15,7 +15,7 @@ app.use("/musik", musikRoute);
 
 app.get("/", (req, res) => {
   console.log(["GET ROUTE"]);
-  res.send("Selamat datang Prajurit");
+  res.send("Selamat datang !");
 });
 
 app.use(bodyParser.json());
@@ -23,3 +23,4 @@ app.use(bodyParser.json());
 app.listen(port, () =>
   console.log(`server berjalan di port : http://localhost:${port}`)
 );
+
